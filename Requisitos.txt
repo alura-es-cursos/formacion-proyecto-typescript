@@ -6,3 +6,18 @@
 * Siempre que la transacción sea del tipo DEPÓSITO, el monto de la transacción debe agregarse al saldo de la cuenta.
 * Siempre que la transacción sea del tipo TRANSFERENCIA o PAGO DE FACTURA, el monto de la transacción deberá restar del saldo de la cuenta.
 * El saldo debe estar siempre actualizado en la pantalla de la aplicación para cada transacción realizada.
+
+----------------------------------------------------------------------------------------------------------
+
+La información de la cuenta debe estar en un módulo específico llamado: "Cuenta":
+
+-saldo
+-Fecha de acceso
+-Registro de transacciones realizadas
+-Historial de transacciones
+
+* Los componentes
+
+-Nueva transaccion: Debe solo recopilar la información del forulario de la interfaz y pasar los datos al módulo Cuenta.
+
+-Saldo: Debe mostrar la información de Fecha de acceso y el saldo para el usuario en la interfaz, accediendo a estos datos a traves del módulo Cuenta
